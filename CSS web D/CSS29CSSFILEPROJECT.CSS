@@ -1,0 +1,38 @@
+body{
+    background-color: #000000;
+}
+.container {
+   display: flex;
+overflow-x:scroll;
+font-size:110px;
+
+align-items: center; 
+/* line-height: 1;
+    /* display: inline-block; */
+     /* height: 1em;  */
+     position: relative;
+    font-weight:700;
+    color: rgb(65,65,65);
+    -webkit-text-stroke: 0.25rem rgb(255,255,255);
+    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+  /* background-image: url(https://occ-0-2590-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABViz9ZecNphqw3WchFRSmcPQfa6jTPR2HJ3q5uE6YseecZbG1QsLa6-VwpvkTjwST0vcgfF6ZMjzU4hRUIjIAwYziQ43VVSMfGBU0NOkegvpToxqEzBVb_sLU1pQo8Wr2fpszk8rYjOGFBTTajoDatkjLwQchYicUN5q1p00TeZoGVa2Mveo61fzz6M6xkSf1zRcmB2avxCOjA6wBlHsWdq4jPLcehPPjNY3mb44xLdPGmeaey7ZqwZCOmH0oKHC1npICSLGOiGWlrxYI_luvkuPiDM53HLHqPNMzm_3fU4KlFkzqpUZvEjvvzPQGiOXfJFvYjYK1mXLgjOmpoxBqlo.webp?r=3f1) */
+
+}
+img{
+    margin: 0 4px;
+    border-radius: 15px;  
+
+} 
+ header div svg{
+    color: rgb(229,9,20);
+    fill: currentColor;
+   width:5.5625rem;
+    height:1.5rem;
+    font-family: Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+
+
+}
+header div{
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%, rgba(0, 0, 0, 0.8965) 8.500%, rgba(0, 0, 0, 0.8861) 17.00%, rgba(0, 0, 0, 0.8688) 25.50%, rgba(0, 0, 0, 0.8444) 34.00%, rgba(0, 0, 0, 0.8132) 42.50%, rgba(0, 0, 0, 0.7750) 51.00%, rgba(0, 0, 0, 0.7368) 59.50%, rgba(0, 0, 0, 0.7056) 68.00%, rgba(0, 0, 0, 0.6813) 76.50%, rgba(0, 0, 0, 0.6639) 85.00%, rgba(0, 0, 0, 0.6535) 93.50%, rgba(0, 0, 0, 0.6500) 102.0%);
+
+}

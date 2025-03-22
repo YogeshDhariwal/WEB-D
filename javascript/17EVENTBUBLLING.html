@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child{
+            background-color: red;
+            margin: 15px;
+            padding: 15px;
+        }
+        .childcontainer{
+            background-color: green;
+            margin: 15px;
+            padding: 15px;
+        }
+        .container{
+            background-color:yellow;
+            margin: 15px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">
+                i am a child
+            </div>
+        </div>
+    </div>
+    <!--if child fiers then childcontainer and container also fiers-->
+    <script src="17script.js"></script>
+</body>
+</html>

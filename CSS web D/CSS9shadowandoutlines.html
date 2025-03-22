@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHADOWS AND OUTLINES</title>
+    <style>
+        *{
+            margin:20px;
+        }
+.box{
+    border: 5px solid greenyellow;
+    padding: 30px;
+     box-shadow: 5px 5px 10px red  ;/* h-offset,v-offset,blur,color,insert andar*/
+} 
+.textshadow{
+    text-shadow:2px 2px 4px rgb(111, 0, 255);
+    border: 5px solid;
+    outline: 10px solid red;
+}
+    </style>
+</head>
+<body>
+<div class="box">I am a box</div>  
+<div class="textshadow"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum vitae voluptatibus, cumque rem incidunt sequi consectetur aperiam tenetur? Nihil tenetur aspernatur est.</p></div>
+</body>
+</html>

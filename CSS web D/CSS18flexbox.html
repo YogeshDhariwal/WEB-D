@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBOX</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            /* horizontally center */
+
+            align-items: center;
+            /* vertically center item used for one line*/
+            /* flex-direction: column;/* coloumn wise alignment*/
+
+            flex-wrap: wrap;
+            /* used in overflow condition in one line then trnsfered to other lines*/
+
+            align-content: center;
+            /*content used for more than one lines to center along its main axis not in cross axis main axis is axis along flex direction */
+
+            flex-flow: row wrap;
+            /* this property used to define the diection of flow and the the wraping both  at same time*/
+            gap: 20px;
+            column-gap: 10px;
+            gap: 20px 10px;
+            /* row coloumn*/
+        }
+
+        .item {
+            flex-grow: 1;
+            height: 102px;
+            width: 82px;
+            background-color: red;
+            border: 2px solid;
+        }
+
+        .item1 {
+            flex-grow:2;
+            align-self: flex-end;
+        }
+
+        /* .order-1{
+        order: 1; /*item proprety used to set the order of a item maximum order is placed in last
+    }
+    .order-2{
+        order:2;
+    } */ 
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">me </div>
+            <div class="item order-1">hello </div>
+            <div class="item order-2">jaat </div>
+            <div class="item"> </div>
+            <div class="item"> </div>
+            <div class="item"> </div>
+            <div class="item"> </div>
+
+            <div class="item"> </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

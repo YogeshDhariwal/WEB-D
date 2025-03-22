@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            display: flex;
+            border: 2px solid black;
+            flex-direction: row;
+            align-content: center;
+             margin: 5px;
+             padding: 5px;
+        }
+
+        .image img {
+
+            margin: 3px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .text {
+            text-align: start;
+        }
+
+        h1 {
+            font-size: medium;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 0px;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .capsule {
+            position: absolute;
+            bottom: 7px;
+
+            z-index: 10;
+            right: 3px;
+            margin-bottom: 6px;
+            /* margin-right: 5px; */
+            font-size: 13px;
+            font-weight: bolder;
+            background-color: #242020;
+            opacity: 0.9;
+            color: white;
+            padding: 2px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/KtL-SQ20Q0s/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLABJhdIBqlilwXKzJqa6StynbJT4Q"
+                    alt="harry image">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+                <h1>Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1</h1>
+                <p>CodewithHarry. 727k views. 2months ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="20EXCERCISE_CARD.js"></script>
+</body>
+
+</html>

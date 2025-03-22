@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECOTRS</title>
+    <style>
+        /*ELEMENT SELECTOR*/
+        div {
+            color: aqua;
+        }
+
+        /*CLASS SELECTOR*/
+        .red {
+            color: red;
+        }
+
+        /*ID SELECTOR*/
+        #g33 {
+            color: yellow;
+            background-color: green;
+        }
+
+        /*CHILD SELECTOR direct child*/
+        div>p {
+            color: brown;
+            background-color: palegreen;
+        }
+
+        /*DESEDENT SELECTOR div ka andar khai bi p hai to ye property apply*/
+        div p {
+            color: brown;
+            background-color: palegreen;
+        }
+
+        /*UNVERSAL SELECTOR */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*PSEUDO SELECTOR*/
+        a:visited {
+            color: maroon;
+        }
+
+        a:link {
+            color: blueviolet;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <div>i am a div
+        <main>
+            <P>I AM YOGESG DHARIWAL</P>
+        </main>
+    </div>
+    <div class="red">i am 2 div</div>
+    <div id="g33">i am 3 div</div>
+    <div>
+        <a href="https://www.google.com">GO TO GOOGLE</a>
+        <a href="https://www.facebook.com">GO TO FACEBOOK</a>
+    </div>
+</body>
+
+</html>

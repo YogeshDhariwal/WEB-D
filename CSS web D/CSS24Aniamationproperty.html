@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Property</title>
+    <style>
+        .container {
+            height: 50vh;
+            width: 50vw;
+            background-color: aqua;
+        }
+
+        .box {
+            /* background-color: lawngreen; */
+            height: 20vh;
+            width: 30vw;
+         /*   animation-name: yogeshanimation;
+            animation-duration: 3s;
+
+         /*   animation-iteration-count: 3;
+            /*for repetation of animation*/
+
+         /*   animation-timing-function: cubic-bezier(0, 0.38, 0, 0.83);
+
+            animation-delay: 1s;
+            /* kitna der ka bad chala*/
+
+       /*     animation-direction:alternate-reverse;
+            animation-play-state:paused;*/
+            /*animation ko  khai bi rokna ka liya*/
+            animation: yogeshanimation 3s  ease-in-out 1s 1 alternate;
+            /*forward means it ratain forward position*/
+        }
+
+        @keyframes yogeshanimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                transform: translateX(200px);
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+ /*the specificity of this selector is 10+1=11 */
+        h1.yellow {
+            color: aqua;
+        }
+  /* the specificity of this selector is 10*/
+        .yellow {
+            color: yellow;
+        }
+/* the specificity of this selector is 10*/
+        .cred {
+            color: red;
+        }
+/* the specificity of this selector is 10*/
+        .cpurple {
+            color: purple;
+        }
+        /* attributes selectors the specificity of this selector is 10 */
+      [data-x=a]{ 
+        color: magenta;
+        background-color: brown;
+      }
+        /* cascade algorithm used to define specificity 
+        1. if we use same selector then the one is in last that property will appear
+        2. If selectors are different then we find specificity
+        style > id >class>attributes>element> universal
+        3.ORIGIN
+        4.IMPORTANT -Most specificity */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style> 
+        .container{
+            height: 90vh;
+         
+           display: grid;
+           grid-template-columns:1fr 1fr 1fr;
+           grid-template-rows:1fr 1fr 1fr;
+           justify-content: space-around;
+         
+          
+        }
+        .box{
+          background-color: gainsboro;
+     margin: 5px;
+        }
+        .box1 div{
+   background-color: aqua;
+ 
+        }
+        .box1 span{
+           
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1 "> English <div  >Download 32-bit</div><span>Download 64-bit</span></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+
+    </div>
+</body>
+</html>

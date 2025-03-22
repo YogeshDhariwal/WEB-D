@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS boxmodel</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0%;
+       } 
+.box{
+    background-color: aqua;
+}
+.box1{
+color: yellow;
+padding:10px;
+margin: 25px;
+border: 2px solid blue;
+height: 200px;
+box-sizing: border-box;/* means  total height is 200 including padding,border and content excluding margin*/
+}
+.box2{
+color: red;
+padding:10px;
+margin: 35px;/*MARGIN COLLAPSE means margin between two box is given on the basic of which box has greater margin it include only one time*/
+border: 2px solid black;
+height: 200px;
+box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <div class="box box1">i am a box</div>
+    <div class="box box2"> i am another box </div>
+</body>
+</html>

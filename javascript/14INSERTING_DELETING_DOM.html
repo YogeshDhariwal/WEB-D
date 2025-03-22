@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+    <style>
+        .red{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red green">
+        <div style="display: flex;" 
+        class="box" data-createdby="yogesh">
+            hey i am box
+        </div>
+        <script>
+            <!--creating element dynamically -->
+            // let div=document.createElement("div");
+            // div.innerHTML="i have been inserted by yogesh "
+            // div.setAttribute("class","created");
+            // document.querySelector(".container").prepend(div)
+            let cont=document.querySelector(".container")
+            cont.insertAdjacentHTML("afterbegin" ,"i want to inset html")
+        </script>
+    </div>
+</body>
+</html>

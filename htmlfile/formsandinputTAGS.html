@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Form to appiy for TA</h1>
+    <FOrm action="/submit.php" method="post">
+        <div> <label for="username">Enter username</label>
+            <input type="text" id=" username" name="username" placeholder="Enter username">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" placeholder="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" placeholder="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">Subscribe youtube</label>
+        </div>
+        <div>
+            <label for="comments">Enter Your Comments </label>
+            <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+            <div>
+                <label for="fruits">Favourite Fruits</label>
+                <select name="fruits" id="fruits">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="grapes">Grapes</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

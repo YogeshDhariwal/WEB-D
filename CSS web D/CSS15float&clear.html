@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css float and clear</title>
+    <style>
+        img {
+            float: right;
+        }
+
+        .boxes {
+            border: 3px solid red;
+            display: flow-root;
+            /* if anything oveflows from boxes and we have to include remaning part and apply the properties on that we will us this dispaly property*/
+        }
+
+        .boxes :nth-child(2) {
+            clear: right;
+            /* when we don't want anything in text etc  on its right side,left,or both*/
+            background-color: aqua;
+        }
+
+        .box {
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <img src="https://www.rd.com/wp-content/uploads/2020/07/GettyImages-1138037247.jpg" alt="" width="250px">
+        <div class="box">box1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. In provident quisquam ipsa porro
+            molestias velit minima voluptatibus. Suscipit placeat temporibus nam reprehenderit et.lorem10 Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores nisi numquam.</div>
+        <div class="box">box2</div>
+        <div class="box"> box3</div>
+    </div>
+</body>
+
+</html>

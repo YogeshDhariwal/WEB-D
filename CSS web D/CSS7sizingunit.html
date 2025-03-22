@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        html {
+            font-size: 22px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            color: aqua;
+            border: 5px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /*view port width */
+            margin: auto;
+            /* margin go balanced from both sides it only works on block elements*/
+            height: 20vh;
+            /* view port height only works on block elemens*/
+
+            box-sizing: border-box;
+            background-color: blueviolet;
+        }
+
+        .container {
+            background-color: magenta;
+            /* font-size: 1em; */
+            font-size: 29px;
+            margin: 10px;
+            width: 80vw;
+            /*view port width */
+
+        }
+
+        .container div {
+            font-size: 2em;
+            /* double of inherit size*/
+            font-size: 2rem;
+            /* double of root size*/
+            width: 50%;
+            border: 5px solid red;
+            min-height: 70vh;
+            box-sizing: border-box;
+
+        }
+
+        .container div div {
+            border: 5px solid rgb(16, 16, 255);
+            width: 50%;
+        }
+
+        .mycout {
+            background-color: maroon;
+            font-size: 22px;
+            font-size: 10vmin;
+            /* means height ka 10% pc me or phone width ka */
+            border: 5px solid green;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"> hey how are you doing</div>
+    <div class="container">
+        <div>Lorem,lorem122 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, amet alias. Rerum
+            possimus laperiam soluta!ipsum dolor sit amet consectetur perspiciatis.
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, atque.</div>
+        </div>
+
+    </div>
+    <div class="mycout">i am another contianer</div>
+</body>
+
+</html>

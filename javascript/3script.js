@@ -1,0 +1,29 @@
+console.log("hey i am conditional tutorial")
+let age =0
+// let grace =2
+console.log(age)
+if(age!=18){
+    console.log("he is youngster")
+}
+else if(age==0){
+    console.log("you are not born")
+}
+else{
+    console.log("he is a teenager")
+}
+// operators
+// console.log(age-grace)
+// console.log(age*grace)
+// console.log(age/grace)
+// console.log(age**grace)
+// console.log(age%grace)
+//assignment operator
+//(  x=y , x+=y, x*=y, x/=y)
+// comparision operator
+// == equal,=== equal value and type
+ let a=5;
+
+ let b=8;
+
+let c=a>b?(a-b):(b-a)
+console.log(c)

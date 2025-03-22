@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Property</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+
+        }
+
+        .box {
+            height: 50px;
+            width: 40px;
+            border: 2px solid;
+            /* transform: rotate(40deg); */
+            transform: rotate(0.125turn);
+            /*  1 turn is 360 degree*/
+            
+            transform-origin: 0% 0%;
+            /* used when we have to rotate box about any specific point*/
+
+            /* transform: rotateX(30deg); */
+            /* transform: rotateY(60deg);
+
+           transform: scale(1.2);/* 2 times of box we can used it in X,y,Z Direction respectively*/
+
+            /* transform: skewX(20deg);
+           transform: skewY(40deg); */
+
+            /* transform: translateX(100px);/* to move in X and Y direction*/
+
+            /* transform: translateY(100PX) skewX(30deg) translateX(100px); */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+
+</html>

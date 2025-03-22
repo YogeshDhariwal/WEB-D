@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height:100vh;
+            width:auto;
+            background-color: solid red;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+       grid-template-areas: "nav nav "
+         " main1 main2 "
+         " comment comment"
+         "footer footer ";
+        
+        }
+        .item{
+            height:50px;
+            width:auto;
+            border: 2px solid red;
+        }
+       .item-1 {
+        grid-area:nav;
+        background-color: aqua;
+        height:20vh;
+       list-style: none;
+       position: sticky;
+       }
+       .item-2{
+        grid-area:main1;
+       background-color: blueviolet;
+       height:40vh;
+       }
+       .item-3{
+        grid-area:main2;
+       background-color: rgb(235, 133, 235);
+       height:40vh;
+       }
+       .item-4{
+        grid-area:comment;
+        background-color: yellow;
+        border-radius:15px;
+        height:30vh;
+       }
+       .item-5{
+        grid-area:footer;
+        background-color: bisque;
+       }
+      nav li{
+        display:flex;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1"> <nav><ul>
+            <li> Home</li>
+            <li>About</li>
+            <li>contact</li>
+        </ul></nav></div>
+        <div class="item item-2"> MAIN CONTENT 1</div>
+        <div class="item item-3"> MAIN CONTENT2</div>
+        <div class="item item-4"> COMMENTS........</div>
+        <div class="item item-5"> FOOTER</div>
+       <div>&copy; COPYRIGHT OF THIS SITE IS RESERVED</div>
+    </div>
+</body>
+</html>

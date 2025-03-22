@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Css Selectors</title>
+    <style>
+        .boxes *{
+            border: 2px solid black;
+           
+            color:blue;
+        }
+        /* .box:first-child:first-line{
+     color:red;
+    
+        } */
+
+/* .box,[data-color="primary"]{
+    margin:40px;
+    padding-top: 40px;
+} */
+ /* .box:nth-child(even){
+    background-color: aqua;
+ } */
+  /* .box:nth-last-child(1){
+    background-color: yellow;
+  } */
+   .boxes::before{
+   content:"i am yogesh dhariwal";
+    color :red;
+   }
+    /* dynamically allocation */
+   .boxes::after{ 
+    content: "hello how are you";
+    color: pink;
+   }
+   ::selection{
+    background-color:black;
+    color: aqua;
+   }
+   .box::first-letter{
+    color:peru;
+    font-size:40px;
+    font-style: italic;
+   }
+    </style>
+</head>
+
+<body>
+<div data-color="primary" class="boxes">
+    <div class="box"> Hey i am a box Lorem ipsum rnatur tenetu assumenda.</div>
+    <div class="box">Hey i am a box</div>
+    <div class="box">H ey i am a box</div>
+</div>
+</body>
+
+</html>

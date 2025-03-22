@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position:sticky;
+            top: 0;
+        }
+        nav{
+            background-color: pink;
+            height: 60px;
+        }
+        .container{
+            background-color: yellow;
+          height: 50vh;
+            margin: 20px 15px;
+            text-align:center;
+            padding:20px 120px;
+        }
+        .box1{
+            background-color: rgb(63, 243, 243);
+            height: 270px;
+            width: 480px;
+            float:right;
+           
+        }
+        .box2{
+            height: 270px;
+            width: 480px;
+          background-color: red;
+        }
+        .textbox{
+            height:150px;
+            border: 2px solid black;
+            border-radius:15px;
+            background-color:lightgreen;
+            text-align: center;
+            font-size: 30px;
+        }
+        .orangebox{
+            height: 20px;
+            width: 30px;
+            background-color: orange;
+            position:fixed;
+            bottom:0px;
+            right:23px;
+            border-radius:60px;
+        }
+        .foot{
+            background-color: rgb(240, 115, 156);
+            height:60px;
+            margin: 5px ;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav> NAV BARS</nav>
+    </header>
+    <main class="container">
+        <div class="box1"> MAIN CONTENT</div> 
+        <div class="box2"> MAIN CONTENT</div> 
+    </main>
+    <div class="textbox"> WELCOME TO SIGMA WEB DEVELOPMENT COURSE</div>
+    <div class="orangebox"></div>
+    <footer class="foot">FOOTER</footer>
+</body>
+</html>
