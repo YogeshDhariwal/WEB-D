@@ -27,3 +27,9 @@ else{
 
 let c=a>b?(a-b):(b-a)
 console.log(c)
+let a1=5;
+let str="harry";
+let b1=str.length;
+console.log(a1==b1);  
+console.log(a1==str);
+console.log(a1)

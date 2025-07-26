@@ -42,3 +42,30 @@ function sum(a, b, c) {
 /** hosting  var a goes to the top of function not value
  * declaration moves to the top the top of code
  */
+
+async function sleep(  ){
+    return new Promise((resolve,reject)=>{
+       setTimeout(()=>{
+        resolve(29);
+       },3000);
+    })
+}
+
+(async function main(){
+    // let a=await sleep();
+    // console.log(a);
+    // let b=await sleep();
+    // console.log(b);
+//     let [x,y,...rest]=[1,5,7,8,4]
+// console.log(x,y,rest);
+
+let obj={
+    a:1,
+    b:2,
+    c:3
+}
+let {a,b}=obj;
+console.log(a); 
+console.log(b);
+})()
+

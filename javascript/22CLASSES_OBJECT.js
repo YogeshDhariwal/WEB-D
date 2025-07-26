@@ -15,7 +15,7 @@
 class animal{
      constructor(name )  {
         this.name=name;
-        console.log('object is created....');
+        console.log('object is created.... and he is ',name);
      }
 
     eats(){
@@ -31,7 +31,7 @@ class loin extends animal {
 
     constructor(name )  {
        super(name);
-        console.log('object is created.... and he is lion');
+        console.log('object is created.... and he is ',name);
      }
 }
 

@@ -1,31 +1,31 @@
-console.log("i am learning loops")
-let a=1
-for(let i=0;i<100;i++)
-{
-    console.log(a+i)
-}
-// for in loops
-let obj={
-    name:" steve smith",
-    team :" australia",
-    runs: 9999
+// console.log("i am learning loops")
+// let a=1
+// for(let i=0;i<100;i++)
+// {
+//     console.log(a+i)
+// }
+// // for in loops
+// let obj={
+//     name:" steve smith",
+//     team :" australia",
+//     runs: 9999
 
-}
-for (const key in obj) {
+// }
+// for (const key in obj) {
   
-        const element = obj[key];
-        console.log(key,element);
+//         const element = obj[key];
+//         console.log(key,element);
     
- }
-//for of loop
-for (const c of "yogesh") {
-    console.log(c)
-}
-let i=0
-while(i<6){
-    console.log(i)
-    i++;
-}
+//  }
+// //for of loop
+// for (const c of "yogesh") {
+//     console.log(c)
+// }
+// let i=0
+// while(i<6){
+//     console.log(i)
+//     i++;
+// }
 //for each loop
 
 // let a=[1,3,5,6]
@@ -48,3 +48,18 @@ while(i<6){
 // for (const element of a) {
 //     console.log(element)
 // }
+   let crickter={
+    "name:":"steven smith",
+    "runs:":"10290",
+    "Team:":"Australia"
+   }
+    for (const key in crickter) {
+        // if (Object.prototype.hasOwnProperty.call(crickter, key)) {
+            const element = crickter[key];
+            console.log(key,element);
+        
+    }
+     let st="yogesh";
+    for (const element of st) {
+        console.log(element);
+    }

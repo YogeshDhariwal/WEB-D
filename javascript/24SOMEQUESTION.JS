@@ -39,10 +39,33 @@
 //   let ascii= character.charCodeAt(0);
 //   console.log(ascii);
   
- function passwardvalidator(passward) {
-    if(passward.length < 8){
-        return ("this is not a valid passward")
-    }
+//  function passwardvalidator(passward) {
+//     if(passward.length < 8){
+//         return ("this is not a valid passward")
+//     }
    
- }
-passwardvalidator("123qqHJWS");
+//  }
+// passwardvalidator("123qqHJWS");
+
+// let housess=["gryffinder","hufflepuff","raavenclaw","sltthernin"];
+let students=["yogesh","steve smith","pat cummins","suresh raina ","ms dhoni","maninder singh","cody"];
+let houses=[];
+
+  for (const student of students) {
+    if(student.length<6){
+        houses.push("gryffinder");
+    }
+     else if( student.length<8){
+      houses.push("hufflepuff");
+     }
+
+     else if(student.length<12){
+        houses.push("raavenclaw");
+     }
+     else{
+        houses.push("slytherin")
+     }
+  }
+ 
+  console.log('House Name',houses);
+

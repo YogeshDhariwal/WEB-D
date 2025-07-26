@@ -7,14 +7,27 @@ setTimeout(() => {
 console.log("rohan is a hecker")
 
 /***callback function */
-const callback = (arg) => {
+// const callback = (arg) => {
+//   console.log(arg);
+// }
+
+// const loadscript = (src,callback) =>{
+//   let sc=  document.createElement("script");
+//     sc.src=src;
+//     sc.onload =callback("yogesh")
+//     document.head.append(sc);
+// }
+// loadscript("https://www.bing.com/search?q=youtubbe&gs_lcrp=EgRlZGdlKgcIABBFGMIDMgcIABBFGMIDMgcIARBFGMIDMgcIAhBFGMIDMgcIAxBFGMID0gELMjM2MjU4OWowajGoAgSwAgE&FORM=ANNAB1&PC=NMTS", callback)
+ 
+const callback=(arg) => {
   console.log(arg);
 }
 
-const loadscript = (src,callback) =>{
-  let sc=  document.createElement("script");
-    sc.src=src;
-    sc.onload =callback("yogesh")
-    document.head.append(sc);
+
+const loadscript=(src,callback) => {
+  let sc=document.createElement("script")
+  sc.src=src;
+  sc.onload=callback("yogesh")
+  document.head.append(sc);
 }
 loadscript("https://www.bing.com/search?q=youtubbe&gs_lcrp=EgRlZGdlKgcIABBFGMIDMgcIABBFGMIDMgcIARBFGMIDMgcIAhBFGMIDMgcIAxBFGMID0gELMjM2MjU4OWowajGoAgSwAgE&FORM=ANNAB1&PC=NMTS", callback)

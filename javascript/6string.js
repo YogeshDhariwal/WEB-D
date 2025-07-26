@@ -1,3 +1,4 @@
+/** Javascript is a for giving language because it always try to show less error and let the code irrespective of error  */
 console.log("hey i am using string in javascript")
 let s="yogesh";
 console.log("this is the writen string using javascript",s);
@@ -10,10 +11,12 @@ console.log(s[5])
 console.log("lenght of string is:",s.length);
 let realname="harrry"
 let friend="raman"
-console.log("his  name is "+realname+" his friend name is "+friend)
-
+console.log("his  name is "+realname+" and his friend name is "+friend)
 // template literals
+
 console.log(`His name is ${realname} and his friends name is ${friend}`)
+console.log(`hello i am using template literals to use "doublequote" inside a string `);
+
 // escape sequence
 // to use " " " like this we use \ as escape sequence use to introduce some characters 
 let names="roh\"an"
