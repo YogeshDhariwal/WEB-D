@@ -1,0 +1,13 @@
+.card{
+   width: 20vw;
+   height: 20vh;
+   border: 2px solid red;
+  
+}
+
+img{
+    width: 20vw;
+    height: 20vh;
+   object-fit:cover;
+
+}

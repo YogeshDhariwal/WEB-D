@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>why react</title>
+    <style>
+        .box{
+            height: 120px;
+            width: 120px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   <!--1. React helps us to make variables of innerhtml content ad if you change the variable the html or other will change accordignly -->
+     <!--2. Using react we can breaks our code into modules  -->
+   <script>
+    let box1="i am a box 1"
+   </script>
+        <div class="box box1">box1</div>
+        <div class="box box2">i am a box 2</div>
+        <div class="box box3"> i am a box 3</div>
+
+        <script>
+            setTimeout(()=>{
+                 document.querySelector(".box1").innerHTML="hey"
+            },1000);
+           
+              setTimeout(()=>{
+                 document.querySelector(".box2").innerHTML="hello"
+            },2000);
+            
+              setTimeout(()=>{
+                 document.querySelector(".box3").innerHTML="hey 3"
+            },3000);
+        </script>
+</body>
+</html>
+   <!--3. we can make componets so that we can use and modify these anywhere in the code -->
+<NavBar color="red" background="blue"/>

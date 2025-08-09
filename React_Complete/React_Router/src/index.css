@@ -1,0 +1,24 @@
+nav{
+  display:flex;
+  gap: 30px;
+  background: #000;
+  color: white;
+}
+
+li{
+  list-style: none;
+  padding:20px;
+}
+
+a li{
+  color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.red{
+  background-color: red;
+  color: white;
+}

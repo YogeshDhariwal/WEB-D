@@ -1,0 +1,28 @@
+.card{
+  border: 2px solid black;
+  height:55vh;
+  width: 45vh;
+   background-color: lightgreen;
+   border-radius: 15px;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+   gap: 20px;
+}
+ul{
+  display: flex;
+   gap: 20px;
+}
+li{
+  list-style: none;
+}
+nav{
+  background-color: aqua;
+  color: red;
+  height: 10vh;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+}
